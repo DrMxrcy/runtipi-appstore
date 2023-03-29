@@ -16,7 +16,7 @@ Set Revolt Invite Only to `1`
 
 If set, you can create invites by SSHing into your Tipi Server and running these commands
 
-1. `docker-compose exec revolt-database mongosh`
+1. `docker exec -i revolt-database mongosh`
 
 2.
 ```

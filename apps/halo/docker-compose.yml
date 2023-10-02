@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   halo:
-    image: halohub/halo:2.8.0
+    image: halohub/halo:2.9.2
     container_name: halo
     restart: unless-stopped
     depends_on:
@@ -27,8 +27,6 @@ services:
       - --spring.r2dbc.password=${HALO_DATABASE_PASSWORD}
       - --spring.sql.init.platform=postgresql
       - --halo.external-url=${HALO_EXTERNAL_URL}
-      - --halo.security.initializer.superadminusername=${HALO_ADMIN_USERNAME}
-      - --halo.security.initializer.superadminpassword=${HALO_ADMIN_PASSWORD}
     labels:
       # Main
       traefik.enable: true

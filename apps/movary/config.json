@@ -5,8 +5,8 @@
   "available": true,
   "exposable": true,
   "id": "movary",
-  "tipi_version": 13,
-  "version": "0.57.0",
+  "tipi_version": 25,
+  "version": "0.58.0",
   "categories": [
     "media"
   ],
@@ -20,6 +20,18 @@
       "label": "MySQL Password",
       "min": 32,
       "env_variable": "MOVARY_MYSQL_PASSWORD"
+    },
+    {
+      "type": "random",
+      "label": "Plex Identifier",
+      "min": 32,
+      "env_variable": "MOVARY_PLEX_IDENTIFIER"
+    },
+    {
+      "type": "random",
+      "label": "Plex Identifier",
+      "min": 32,
+      "env_variable": "MOVARY_JELLYFIN_IDENTIFIER"
     },
     {
       "type": "text",
